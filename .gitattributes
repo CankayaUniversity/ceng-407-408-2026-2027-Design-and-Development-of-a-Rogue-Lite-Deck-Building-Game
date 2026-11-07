@@ -1,0 +1,25 @@
+* text=auto
+
+# Unity YAML files
+*.unity      text eol=lf merge=unityyamlmerge
+*.prefab     text eol=lf merge=unityyamlmerge
+*.asset      text eol=lf merge=unityyamlmerge
+*.mat        text eol=lf merge=unityyamlmerge
+*.anim       text eol=lf merge=unityyamlmerge
+*.controller text eol=lf merge=unityyamlmerge
+*.meta       text eol=lf
+*.cs         text eol=lf diff=csharp
+
+# Binary files (no LFS, see decision K-10).
+# To enable LFS later, replace "binary" with: filter=lfs diff=lfs merge=lfs -text
+*.png      binary
+*.jpg      binary
+*.psd      binary
+*.aseprite binary
+*.wav      binary
+*.mp3      binary
+*.ogg      binary
+*.ttf      binary
+*.otf      binary
+*.fbx      binary
+*.mp4      binary
