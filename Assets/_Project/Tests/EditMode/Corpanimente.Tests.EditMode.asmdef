@@ -1,9 +1,11 @@
 {
     "name": "Corpanimente.Tests.EditMode",
+    "rootNamespace": "Corpanimente.Tests",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "Corpanimente"
+        "Corpanimente",
+        "Corpanimente.Rules"
     ],
     "includePlatforms": ["Editor"],
     "overrideReferences": true,
