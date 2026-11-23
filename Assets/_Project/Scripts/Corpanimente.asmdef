@@ -1,0 +1,8 @@
+{
+    "name": "Corpanimente",
+    "rootNamespace": "Corpanimente",
+    "references": [
+        "Corpanimente.Rules"
+    ],
+    "autoReferenced": true
+}
