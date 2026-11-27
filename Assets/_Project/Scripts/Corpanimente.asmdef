@@ -2,7 +2,9 @@
     "name": "Corpanimente",
     "rootNamespace": "Corpanimente",
     "references": [
-        "Corpanimente.Rules"
+        "Corpanimente.Rules",
+        "UnityEngine.UI",
+        "Unity.TextMeshPro"
     ],
     "autoReferenced": true
 }
