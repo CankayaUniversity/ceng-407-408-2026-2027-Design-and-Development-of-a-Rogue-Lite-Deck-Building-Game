@@ -1,8 +1,9 @@
 using System.Collections;
+using Corpanimente.Presentation.Battle;
 using Corpanimente.Rules.Characters;
 using UnityEngine;
 
-namespace Corpanimente.Presentation.Battle
+namespace Corpanimente.Presentation.Testing
 {
     public sealed class HealthViewTest : MonoBehaviour
     {
