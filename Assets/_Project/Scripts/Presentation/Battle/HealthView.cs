@@ -23,12 +23,13 @@ namespace Corpanimente.Presentation.Battle
             Unbind();
 
             health = newHealth;
-            health.Changed += Refresh;
+            health.Changed += HandleChanged;
 
-            Refresh(health);
+            // Draw the current state once; later updates come from Changed.
+            HandleChanged(health);
         }
 
-        private void Refresh(Health currentHealth)
+        private void HandleChanged(Health currentHealth)
         {
             healthSlider.minValue = 0;
             healthSlider.maxValue = currentHealth.Maximum;
@@ -48,7 +49,7 @@ namespace Corpanimente.Presentation.Battle
         {
             if (health != null)
             {
-                health.Changed -= Refresh;
+                health.Changed -= HandleChanged;
                 health = null;
             }
         }
